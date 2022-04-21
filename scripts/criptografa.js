@@ -2,24 +2,31 @@ function criptografa(){
 
     var textFinal = '';
 
-    var stringTextoPrincipal = textPrincipal.value
+    var stringTextoPrincipal = textPrincipal.value;
+    var inconsistencia = procuraInconsistencia(stringTextoPrincipal);
 
-    for(var i = 0; i < stringTextoPrincipal.length; i++){
-        if(stringTextoPrincipal[i] === 'a'){
-            textFinal += chave[0];
-        }else if(stringTextoPrincipal[i] === 'e'){
-            textFinal += chave[1];
-        }else if(stringTextoPrincipal[i] === 'i'){
-            textFinal += chave[2];
-        }else if(stringTextoPrincipal[i] === 'o'){
-            textFinal += chave[3];
-        }else if(stringTextoPrincipal[i] === 'u'){
-            textFinal += chave[4];
-        }else{
-            textFinal += stringTextoPrincipal[i];
+    if(!inconsistencia){
+        for(var i = 0; i < stringTextoPrincipal.length; i++){
+            var letra = stringTextoPrincipal[i].toLowerCase();
+            if( letra === 'a'){
+                textFinal += chave[0];
+            }else if(letra === 'e'){
+                textFinal += chave[1];
+            }else if(letra === 'i'){
+                textFinal += chave[2];
+            }else if(letra === 'o'){
+                textFinal += chave[3];
+            }else if(letra === 'u'){
+                textFinal += chave[4];
+            }else{
+                textFinal += stringTextoPrincipal[i].toLowerCase();
+            }
         }
+    
+        textSecundario.textContent = textFinal;
+        textPrincipal.value = "";
+    }else{
+        textPrincipal.value = "";
     }
 
-    textSecundario.textContent = textFinal;
-    textPrincipal.value = "";
 }

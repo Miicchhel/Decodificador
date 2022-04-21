@@ -1,4 +1,10 @@
 var chave = ["ai","enter","imes","ober","ufat"];
+var invalidas = ["á","é","í","ó","ú"
+                ,"à","è","ì","ò","ù"
+                ,"ã","ẽ","ĩ","õ","ũ"];
+var inconsistencia=false;
+
+
 var textPrincipal = document.querySelector("#text-principal");
 var textSecundario = document.querySelector("#text-secundario");
 
