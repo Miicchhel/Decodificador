@@ -7,7 +7,6 @@
 
 body{
     background-color: #042c0d8f;
-    font-family:;
 }
 
 header{
@@ -43,7 +42,17 @@ section{
     height: 400px;
     border:none;
     border-radius: 15px;
+}
+
+#text-area-primario{
     background-image: url(../img/criptografia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#text-area-secundario{
+    background-image: url(../img/cifrada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -62,7 +71,6 @@ section{
     resize: none;
     opacity: 0.6
 }
-
 
 .container-principal p{
     margin-top:12px;
