@@ -16,9 +16,18 @@ header{
 }
 
 .img-alura{
+    display: inline-block;
     position:absolute;
     left: 4.28%;
     top: 25%;
+}
+
+.badge{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    right: 4.28%;
+    top: -15%;
 }
 
 main{
@@ -140,8 +149,6 @@ footer{
         width: 35%;
 
     }
-
-
 
     footer{
         margin-top: 25px;
