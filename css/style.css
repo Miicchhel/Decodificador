@@ -122,6 +122,18 @@ section{
 
 .container-secundario{
     margin-top: 15px;
+    position: relative;
+}
+
+.alerta{
+    position: absolute;
+    display: none;
+    top: 40%;
+    right: auto;
+    background-color: #F3F5FC;
+    padding: 5px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer{
@@ -155,7 +167,6 @@ footer{
 
     .btn{
         width: 35%;
-
     }
 
     footer{
@@ -200,7 +211,7 @@ footer{
 
     .container-secundario{
     margin-top: 15px;
-}
+    }
 
     footer{
         margin-top: 25px;
